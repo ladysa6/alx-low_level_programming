@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - check th code
+ * main - check the code
  * Return: void
  */
+
 void print_alphabet(void)
 {
 	char c;
