@@ -3,23 +3,25 @@
 /**
  * print_diagonal - printing lines diagonal
  * @n: input variable
+ *
+ * Return: void
  */
-void print_square(int size)
+
+
+void print_diagonal(int n)
 {
-	int hgt, wid;
+	int i, j;
 
-	if (size > 0)
+	if (n <= 0)
+		_putchar('\n');
+	for (i = 0; i < n; i++)
 	{
-		for (hgt = 0; hgt < size; hgt++)
+		for (j = 0; j < i; j++)
 		{
-			for (wid = 0; wid < size; wid++)
-				_putchar('#');
-
-			if (hgt == size - 1)
-				continue;
-			_putchar('\n');
+			_putchar(' ');
 		}
+		_putchar('\\');
+		_putchar('\n');
 	}
 
-	_putchar('\n');
 }
